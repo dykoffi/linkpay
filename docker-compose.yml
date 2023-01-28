@@ -1,0 +1,18 @@
+version: "3.9" # optional since v1.27.0
+services:
+  linkpay_db_dev:
+    image: postgres:14-alpine
+    container_name: linkpay_db_dev
+    environment:
+      - POSTGRES_USER=linkpay_user
+      - POSTGRES_DB=linkpay_db_dev
+      - POSTGRES_PASSWORD=9023
+    ports:
+      - 14675:5432
+    volumes:
+      - linkpay_vol_dev:/var/lib/postgresql/data
+
+
+volumes:
+  linkpay_vol_dev:
+    driver: local

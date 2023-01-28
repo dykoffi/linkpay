@@ -1,0 +1,11 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+logs
+public
+coverage
+.prettierrc
+**/*.json
+**/*.yml
+**/*.md
