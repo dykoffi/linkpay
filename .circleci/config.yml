@@ -47,24 +47,24 @@ jobs:
           path: coverage
 
       - store_test_results:
-          path: coverage
+          path: coverage/clover.xml
 
-      ####################### BUILD PROJECT ###########################
+      # ####################### BUILD PROJECT ###########################
 
-      - run:
-          name: Build project
-          command: yarn cqx build
-      - run:
-          name: Install production packages
-          command: yarn install --prod
-          working_directory: build
+      # - run:
+      #     name: Build project
+      #     command: yarn cqx build
+      # - run:
+      #     name: Install production packages
+      #     command: yarn install --prod
+      #     working_directory: build
 
-      ####################### DOCKER BUILD ###########################
+      # ####################### DOCKER BUILD ###########################
 
-      - run:
-          name: Building docker Image
-          command: docker build -t dykoffi/${REPO} .
-          working_directory: build
+      # - run:
+      #     name: Building docker Image
+      #     command: docker build -t dykoffi/${REPO} .
+      #     working_directory: build
 
 workflows:
   deploy:
