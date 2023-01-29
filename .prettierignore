@@ -3,6 +3,7 @@
 **/.hg
 **/node_modules
 logs
+build
 public
 coverage
 .prettierrc

@@ -29,13 +29,28 @@ jobs:
     steps:
       - checkout
 
-      ####################### BUILD PROJECT ###########################
+      ####################### INSTALL DEPENDENCIES ###########################
 
       - restore_cache_yarn
       - run:
           name: Install dependencies
           command: yarn install
       - save_cache_yarn
+
+      ####################### TEST PROJECT ###########################
+
+      - run:
+          name: Run code test
+          command: yarn test
+
+      - store_artifacts:
+          path: coverage
+
+      - store_test_results:
+          path: coverage
+
+      ####################### BUILD PROJECT ###########################
+
       - run:
           name: Build project
           command: yarn cqx build
@@ -50,7 +65,6 @@ jobs:
           name: Building docker Image
           command: docker build -t dykoffi/${REPO} .
           working_directory: build
-
 
 workflows:
   deploy:
