@@ -1,11 +1,10 @@
-# linkpay documentation for begining
+# linkpay documentation
 
 ### Prerequises
 
 - [Nodejs](https://nodejs.org/) >= 14.x
-- [cqx](https://www.npmjs.com/package/cqx)
-- [Git](https://git-scm.com/)
-- [gh](https://cli.github.com/) (optional)
+- [Git](https://git-scm.com/) for versioning
+- [gh](https://cli.github.com/) (optional) for github management
 - [circleci](https://circleci.com/docs/local-cli/) (optional) for ci/cd pipelines
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker-compose](https://docs.docker.com/compose/)
@@ -41,7 +40,7 @@
 2. Define the main branch `git branch -M main`
 3. Add files in `git add .`
 4. Commit your code by using `git commit -am "First commit"`
-5. Create git repository `gh repo create <repo_name> --source . --remote <remote_name> --public --push`
+5. Create git repository `gh repo create <%= repo_name %> --source . --remote origin --public --push`
 6. If you wnat you open the repository in the browser `gh browse`
 
 ### Deploy on gcloud (Cloud run)

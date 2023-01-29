@@ -1889,10 +1889,10 @@ cqx-secure@^1.8.1:
     jsonwebtoken "^8.5.1"
     lodash "^4.17.21"
 
-cqx@^1.13.4:
-  version "1.13.4"
-  resolved "https://registry.yarnpkg.com/cqx/-/cqx-1.13.4.tgz#4789803dd255a92f12cf7d21d7ab848495dede4c"
-  integrity sha512-BKWoAgBBB+tG00XT1n1ph5PUTKjEM0fgetV+nFjdNMnyraFb1HfypfTcVUblpxZYqHeTHzrR2kBvHBKNZu/mFw==
+cqx@^1.13.5:
+  version "1.13.5"
+  resolved "https://registry.yarnpkg.com/cqx/-/cqx-1.13.5.tgz#76e0bc883ff3d9ab8e17854f4bf1c6f2b1e87264"
+  integrity sha512-f1S95p7rVW7n52kP2KeMw5W8J9EXrQ1R0/v9U5wAVMEswzc7WLXx85z0RogiCdhg8QeMLgf3B1Ku3mKGA+7VQw==
   dependencies:
     chalk "^5.0.1"
     ciql-json "^1.9.6"
