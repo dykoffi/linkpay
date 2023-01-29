@@ -9,7 +9,7 @@
         "start:stack": "docker compose up -d",
         "start:dev": "NODE_ENV=local nodemon ./index.ts",
         "start:debug": "NODE_ENV=local DEBUG=* nodemon ./index.ts",
-        "test": "NODE_ENV=test jest --coverage",
+        "test": "NODE_ENV=test jest --coverage --ci --reporters=jest-junit",
         "update": "prisma migrate dev && cqx update",
         "version": "cqx version",
         "docker:build": "cqx build && DOCKER_BUILDKIT=1 docker build -t dykoffi/linkpay ./build && rm -rdf build"
@@ -46,6 +46,7 @@
         "@types/swagger-ui-express": "^4.1.3",
         "cqx": "^1.13.5",
         "jest": "^28.1.0",
+        "jest-junit": "^15.0.0",
         "prettier": "^2.8.3",
         "prisma": "4.3.0",
         "prisma-json-schema-generator": "^2.0.11",
