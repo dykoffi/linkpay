@@ -41,13 +41,13 @@ jobs:
 
       - run:
           name: Run code test
-          command: yarn test
+          command: yarn test --ci --reporters=jest-junit
 
       - store_artifacts:
           path: coverage
 
       - store_test_results:
-          path: coverage/clover.xml
+          path: junit.xml
 
       # ####################### BUILD PROJECT ###########################
 

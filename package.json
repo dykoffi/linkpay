@@ -9,7 +9,7 @@
         "start:stack": "docker compose up -d",
         "start:dev": "NODE_ENV=local nodemon ./index.ts",
         "start:debug": "NODE_ENV=local DEBUG=* nodemon ./index.ts",
-        "test": "NODE_ENV=test jest --coverage --ci --reporters=jest-junit",
+        "test": "NODE_ENV=test jest --coverage",
         "update": "prisma migrate dev && cqx update",
         "version": "cqx version",
         "docker:build": "cqx build && DOCKER_BUILDKIT=1 docker build -t dykoffi/linkpay ./build && rm -rdf build"
