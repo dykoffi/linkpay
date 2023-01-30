@@ -47,7 +47,7 @@ jobs:
           path: coverage
 
       - store_test_results:
-          path: ./artifacts
+          path: artifacts
 
       # ####################### BUILD PROJECT ###########################
 
