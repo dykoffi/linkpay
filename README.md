@@ -33,6 +33,7 @@
 5. Use `yarn start:dev` to run project in dev environment
 6. Use `yart test` to run tests
 7. Use `yarn lint` to lint the code
+8. Do something widhfoei iohfo
 
 ### Manage versionning (Just at the first launch)
 
