@@ -69,6 +69,6 @@ jobs:
 workflows:
   deploy:
     jobs:
-      - build_deploy_on_cloudufn:
+      - build_deploy_on_cloudubfn:
           context:
             - cqx
